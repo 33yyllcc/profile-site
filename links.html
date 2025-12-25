@@ -8,110 +8,170 @@
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
+  <!-- Animated medical background -->
+  <div class="bgfx">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div class="grid"></div>
+    <div class="floaters"></div>
+  </div>
 
-  <div class="nav">
-    <div class="container nav-inner">
+  <header class="topbar">
+    <div class="container wrap">
       <div class="brand">
-        <img src="assets/img/logo.png" alt="Logo">
-        <div>Abd-Alrahman Aqeel Taha</div>
-        <div class="badge" data-i18n="badge_links">روابط</div>
+        <img src="assets/img/logo.png" alt="logo">
+        <div>
+          <div class="name">Abd-Alrahman Aqeel Taha</div>
+          <div class="role"><b></b><span data-i18n="role"></span></div>
+        </div>
       </div>
 
-      <div class="menu">
-        <a href="index.html" data-i18n="nav_home">الرئيسية</a>
-        <a href="about.html" data-i18n="nav_about">من أنا</a>
-        <a href="articles.html" data-i18n="nav_articles">المقالات</a>
-        <a href="links.html" data-i18n="nav_links">روابط</a>
-        <a href="contact.html" data-i18n="nav_contact">تواصل</a>
-      </div>
+      <nav class="nav">
+        <a href="index.html" data-i18n="nav_home"></a>
+        <a href="about.html" data-i18n="nav_about"></a>
+        <a href="articles.html" data-i18n="nav_articles"></a>
+        <a href="links.html" data-i18n="nav_links"></a>
+        <a href="contact.html" data-i18n="nav_contact"></a>
+      </nav>
 
-      <div class="lang">
-        <div class="hint" id="langHint">اللغة</div>
+      <div class="tools">
+        <div class="hint" id="langHint"></div>
         <button id="langToggle" type="button">EN</button>
       </div>
     </div>
-  </div>
+  </header>
 
-  <div class="container hero fade-in">
-    <div class="split">
-      <div class="media">
-        <img src="assets/img/full-body.png" alt="Full body medical portrait">
-      </div>
+  <main class="page">
+    <div class="container">
 
-      <div class="card">
-        <div class="card-pad">
-          <h1 class="h1" style="font-size:38px" data-i18n="links_title">روابطي الرسمية</h1>
-          <p class="p" data-i18n="links_p1"></p>
-
-          <div class="note" style="margin-bottom:14px" data-i18n="links_tip"></div>
-
-          <div class="actions">
-            <a class="btn primary" href="articles.html">📄 <b data-i18n="links_cta1">اقرأ المقالات</b> <span>Medium</span></a>
-            <a class="btn" href="contact.html">✉️ <b data-i18n="links_cta2">تواصل معي</b> <span>Email</span></a>
-          </div>
-
-          <div class="note" style="margin-top:14px" data-i18n="links_note">
-            إذا تحب المحتوى: تابعني وخلي هذه الصفحة هي الرابط الوحيد عندك.
-          </div>
+      <section class="hero" style="grid-template-columns: .95fr 1.05fr;">
+        <div class="media reveal">
+          <img src="assets/img/full-body.png" alt="full body portrait">
         </div>
-      </div>
-    </div>
 
-    <div class="card" style="margin-top:16px;">
-      <div class="card-pad">
-        <h3 style="margin:0 0 10px" data-i18n="links_featured">روابط مهمة</h3>
-        <div class="list">
-          <a class="linkrow" href="https://medium.com/@3bd-aqeel" target="_blank" rel="noopener">
-            <div class="left">
-              <div class="title">Medium</div>
-              <div class="desc" data-i18n="links_medium_desc">مقالات طويلة + مراجع</div>
+        <div class="panel reveal">
+          <div class="pad">
+            <h1 class="h1" data-i18n="links_title">روابطي الرسمية</h1>
+            <p class="p" data-i18n="links_p">
+              هذه الصفحة صممتها حتى تكون رابط واحد رسمي بكل مكان.
+            </p>
+
+            <div class="callout reveal" data-i18n="links_callout">
+              نصيحة: خلي هذا الرابط هو الوحيد بالبايو (Instagram/TikTok/YouTube) حتى الناس توصل لكل شي بسرعة.
             </div>
-            <div>→</div>
-          </a>
-          <a class="linkrow" href="https://www.linkedin.com/in/abd-alrahman-taha-1442133a1" target="_blank" rel="noopener">
-            <div class="left">
-              <div class="title">LinkedIn</div>
-              <div class="desc" data-i18n="links_li_desc">ملف مهني وتواصل</div>
+
+            <div class="ctaRow">
+              <a class="btn primary" href="articles.html">📄 <span data-i18n="cta1">المقالات</span> <span class="sub" data-i18n="cta1s">Medium</span></a>
+              <a class="btn" href="contact.html">✉️ <span data-i18n="cta3">تواصل</span> <span class="sub" data-i18n="cta3s">Email</span></a>
             </div>
-            <div>→</div>
-          </a>
+
+            <div class="chips" style="margin-top:14px">
+              <div class="chip" data-i18n="links_chip1">روابط رسمية</div>
+              <div class="chip" data-i18n="links_chip2">متابعة سريعة</div>
+              <div class="chip" data-i18n="links_chip3">أرشيف محتوى</div>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="section">
+        <div class="card reveal" style="grid-column: span 12;">
+          <div class="pad">
+            <h3 data-i18n="links_section1">روابط أساسية</h3>
+            <p class="p" style="margin:6px 0 0" data-i18n="links_section1d">
+              هذي أهم الروابط اللي تشرح شغلي وتثبت هويتي.
+            </p>
+
+            <div class="list">
+              <a class="row" href="https://3bd-aqeel.medium.com/why-doctors-are-afraid-of-apples-db15f65c4c2d" target="_blank" rel="noopener">
+                <div class="left">
+                  <div class="title" data-i18n="links_feature_article">المقال المميز</div>
+                  <div class="desc">Why Doctors Are Afraid of Apples 🍎</div>
+                </div>
+                <div>→</div>
+              </a>
+
+              <a class="row" href="https://medium.com/@3bd-aqeel" target="_blank" rel="noopener">
+                <div class="left">
+                  <div class="title">Medium</div>
+                  <div class="desc" data-i18n="links_medium_desc">كل مقالاتي الطويلة + أرشيف مرتب</div>
+                </div>
+                <div>→</div>
+              </a>
+
+              <a class="row" href="https://www.linkedin.com/in/abd-alrahman-taha-1442133a1" target="_blank" rel="noopener">
+                <div class="left">
+                  <div class="title">LinkedIn</div>
+                  <div class="desc" data-i18n="links_li_desc">ملف مهني رسمي + تواصل</div>
+                </div>
+                <div>→</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal" style="grid-column: span 12;">
+          <div class="pad">
+            <h3 data-i18n="links_section2">السوشيال</h3>
+            <p class="p" style="margin:6px 0 0" data-i18n="links_section2d">
+              تابعني هنا للمحتوى القصير والفيديوهات.
+            </p>
+
+            <div class="list">
+              <a class="row" href="https://www.instagram.com/3bd.aqeel" target="_blank" rel="noopener">
+                <div class="left">
+                  <div class="title">Instagram</div>
+                  <div class="desc">@3bd.aqeel</div>
+                </div>
+                <div>→</div>
+              </a>
+
+              <a class="row" href="https://www.tiktok.com/@3.aqeel" target="_blank" rel="noopener">
+                <div class="left">
+                  <div class="title">TikTok</div>
+                  <div class="desc">@3.aqeel</div>
+                </div>
+                <div>→</div>
+              </a>
+
+              <a class="row" href="https://youtube.com/@3_aqeel" target="_blank" rel="noopener">
+                <div class="left">
+                  <div class="title">YouTube</div>
+                  <div class="desc">@3_aqeel</div>
+                </div>
+                <div>→</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal" style="grid-column: span 12;">
+          <div class="pad">
+            <h3 data-i18n="links_section3">التواصل</h3>
+            <p class="p" style="margin:6px 0 0" data-i18n="links_section3d">
+              للتعاونات والمشاريع التعليمية والدعوات.
+            </p>
+
+            <div class="list">
+              <a class="row" href="mailto:abdalrahmanaqeeltaha@gmail.com">
+                <div class="left">
+                  <div class="title">Email</div>
+                  <div class="desc">abdalrahmanaqeeltaha@gmail.com</div>
+                </div>
+                <div>→</div>
+              </a>
+            </div>
+
+            <div class="callout" data-i18n="contact_note"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer reveal">
+        <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
+        <div>profile.mazums.org</div>
       </div>
     </div>
-
-    <div class="card" style="margin-top:16px;">
-      <div class="card-pad">
-        <h3 style="margin:0 0 10px" data-i18n="links_social">السوشيال</h3>
-        <div class="list">
-          <a class="linkrow" href="https://www.instagram.com/3bd.aqeel" target="_blank" rel="noopener">
-            <div class="left"><div class="title">Instagram</div><div class="desc">@3bd.aqeel</div></div><div>→</div>
-          </a>
-          <a class="linkrow" href="https://www.tiktok.com/@3.aqeel" target="_blank" rel="noopener">
-            <div class="left"><div class="title">TikTok</div><div class="desc">@3.aqeel</div></div><div>→</div>
-          </a>
-          <a class="linkrow" href="https://youtube.com/@3_aqeel" target="_blank" rel="noopener">
-            <div class="left"><div class="title">YouTube</div><div class="desc">@3_aqeel</div></div><div>→</div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" style="margin-top:16px;">
-      <div class="card-pad">
-        <h3 style="margin:0 0 10px" data-i18n="links_contact">التواصل</h3>
-        <div class="list">
-          <a class="linkrow" href="mailto:abdalrahmanaqeeltaha@gmail.com">
-            <div class="left"><div class="title">Email</div><div class="desc">abdalrahmanaqeeltaha@gmail.com</div></div><div>→</div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
-      <div><span class="kbd">profile.mazums.org</span></div>
-    </div>
-  </div>
+  </main>
 
   <script src="assets/js/main.js"></script>
 </body>
