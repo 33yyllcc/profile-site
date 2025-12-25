@@ -1,11 +1,37 @@
-<!-- index.html -->
+<!-- index.html (FULL) -->
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abd-Alrahman Aqeel Taha | Medical Profile</title>
-  <meta name="description" content="Abd-Alrahman Aqeel Taha — Medical Student & Medical Content Creator. Educational medical content and structured articles." />
+
+  <!-- ✅ Google Search Console Verification -->
+  <meta name="google-site-verification" content="8RQpuTL3ApeyOvPsDV0-FrnFW2upQfkQRLJfvFPaaCI" />
+
+  <!-- ✅ SEO: Title + Description (Arabic-first + includes the exact queries you want) -->
+  <title>الدكتور عبدالرحمن عقيل طه | Dr Abd-Alrahman Aqeel Taha | ملف طبي رسمي</title>
+  <meta name="description" content="الدكتور عبد الرحمن عقيل • الدكتور عبدالرحمن عقيل طه — طالب طب وصانع محتوى طبي. Dr abd alrahman aqeel • Dr abd alrahman taha. موقع رسمي للمقالات والروابط والتواصل." />
+
+  <!-- ✅ Canonical -->
+  <link rel="canonical" href="https://profile.mazums.org/" />
+
+  <!-- ✅ Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Abd-Alrahman Aqeel Taha" />
+  <meta property="og:title" content="الدكتور عبدالرحمن عقيل طه | Dr Abd-Alrahman Aqeel Taha" />
+  <meta property="og:description" content="موقع رسمي: مقالات تعليمية، روابط الحسابات، وتواصل للتعاونات والمشاريع التعليمية." />
+  <meta property="og:url" content="https://profile.mazums.org/" />
+  <meta property="og:image" content="https://profile.mazums.org/assets/img/hero.png" />
+
+  <!-- ✅ Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="الدكتور عبدالرحمن عقيل طه | Dr Abd-Alrahman Aqeel Taha" />
+  <meta name="twitter:description" content="مقالات + روابط + تواصل. محتوى طبي تعليمي موثوق." />
+  <meta name="twitter:image" content="https://profile.mazums.org/assets/img/hero.png" />
+
+  <!-- ✅ Optional keywords (requested) -->
+  <meta name="keywords" content="الدكتور عبد الرحمن عقيل, الدكتور عبدالرحمن عقيل طه, Dr abd alrahman aqeel, Dr abd alrahman taha, Abd-Alrahman Aqeel Taha, medical content creator, medical student" />
+
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -45,6 +71,11 @@
             <b></b>
             <span data-i18n="role">طالب طب • صانع محتوى طبي</span>
           </div>
+
+          <!-- ✅ Hidden SEO query line -->
+          <p style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;">
+            الدكتور عبد الرحمن عقيل — الدكتور عبدالرحمن عقيل طه — Dr abd alrahman aqeel — Dr abd alrahman taha
+          </p>
         </div>
       </div>
 
@@ -73,14 +104,33 @@
             <div class="chip" data-i18n="home_kicker">ملف طبي تعليمي • موثوق • متحرك</div>
 
             <h1 class="h1" data-i18n="hero_title">
-              ملف طبي تعليمي بهوية حديثة وحضور مهني.
+              الدكتور عبدالرحمن عقيل طه | Dr Abd-Alrahman Aqeel Taha
             </h1>
 
-            <p class="p" data-i18n="hero_p1"></p>
-            <p class="p" data-i18n="hero_p2"></p>
+            <!-- ✅ These contain <strong> in translations, so use data-i18n-html -->
+            <p class="p" data-i18n-html="hero_p1"></p>
+            <p class="p" data-i18n-html="hero_p2"></p>
             <p class="p" data-i18n="hero_p3"></p>
 
-            <div class="chips" aria-label="Topics">
+            <!-- ✅ SOCIAL QUICK LINKS (Instagram + TikTok) -->
+            <div class="socialRow reveal" aria-label="Social media links"
+                 style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+              <a class="btn social instagram"
+                 href="https://www.instagram.com/3bd.aqeel"
+                 target="_blank" rel="noopener"
+                 aria-label="Instagram">
+                📸 <span data-i18n="ig_btn">Instagram</span>
+              </a>
+
+              <a class="btn social tiktok"
+                 href="https://www.tiktok.com/@3.aqeel"
+                 target="_blank" rel="noopener"
+                 aria-label="TikTok">
+                🎵 <span data-i18n="tt_btn">TikTok</span>
+              </a>
+            </div>
+
+            <div class="chips" aria-label="Topics" style="margin-top:14px">
               <div class="chip" data-i18n="chips1">تعليم طبي</div>
               <div class="chip" data-i18n="chips2">محتوى بصري</div>
               <div class="chip" data-i18n="chips3">كتابة علمية</div>
@@ -111,7 +161,7 @@
         </div>
 
         <div class="media reveal" aria-label="Profile image">
-          <img src="assets/img/hero.png" alt="Medical profile portrait" />
+          <img src="assets/img/hero.png" alt="Medical profile portrait of Abd-Alrahman Aqeel Taha" />
         </div>
       </section>
 
