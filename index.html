@@ -1,19 +1,18 @@
-<!-- index.html (FULL) -->
+<!-- index.html (CLEAN + SEO + Schema + organized) -->
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- ✅ Google Search Console Verification -->
+  <!-- ✅ Verification (keep both) -->
   <meta name="google-site-verification" content="8RQpuTL3ApeyOvPsDV0-FrnFW2upQfkQRLJfvFPaaCI" />
   <meta name="google-site-verification" content="Q_ixvWYBOi0ir9TGuRW_grGz7r8Z_VvyKK55ICAiuRs" />
 
-  <!-- ✅ SEO: Title + Description (Arabic-first + includes the exact queries you want) -->
+  <!-- ✅ SEO -->
   <title>الدكتور عبدالرحمن عقيل طه | Dr Abd-Alrahman Aqeel Taha | ملف طبي رسمي</title>
   <meta name="description" content="الدكتور عبد الرحمن عقيل • الدكتور عبدالرحمن عقيل طه — طالب طب وصانع محتوى طبي. Dr abd alrahman aqeel • Dr abd alrahman taha. موقع رسمي للمقالات والروابط والتواصل." />
-
-  <!-- ✅ Canonical -->
+  <meta name="keywords" content="الدكتور عبد الرحمن عقيل, الدكتور عبدالرحمن عقيل طه, Dr abd alrahman aqeel, Dr abd alrahman taha, Abd-Alrahman Aqeel Taha, medical content creator, medical student" />
   <link rel="canonical" href="https://profile.mazums.org/" />
 
   <!-- ✅ Open Graph -->
@@ -30,13 +29,47 @@
   <meta name="twitter:description" content="مقالات + روابط + تواصل. محتوى طبي تعليمي موثوق." />
   <meta name="twitter:image" content="https://profile.mazums.org/assets/img/hero.png" />
 
-  <!-- ✅ Optional keywords (requested) -->
-  <meta name="keywords" content="الدكتور عبد الرحمن عقيل, الدكتور عبدالرحمن عقيل طه, Dr abd alrahman aqeel, Dr abd alrahman taha, Abd-Alrahman Aqeel Taha, medical content creator, medical student" />
+  <!-- ✅ Schema (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abd-Alrahman Aqeel Taha",
+    "alternateName": [
+      "عبدالرحمن عقيل",
+      "الدكتور عبدالرحمن عقيل طه",
+      "الدكتور عبد الرحمن عقيل",
+      "Dr Abd Alrahman Aqeel",
+      "Dr Abd Alrahman Taha",
+      "Dr abd alrahman aqeel",
+      "Dr abd alrahman taha"
+    ],
+    "url": "https://profile.mazums.org/",
+    "image": "https://profile.mazums.org/assets/img/hero.png",
+    "jobTitle": "Medical Student & Medical Content Creator",
+    "description": "Medical student and medical content creator focused on educational content, myth-busting, and public health awareness.",
+    "sameAs": [
+      "https://www.instagram.com/3bd.aqeel",
+      "https://www.tiktok.com/@3.aqeel",
+      "https://youtube.com/@3_aqeel",
+      "https://www.linkedin.com/in/abd-alrahman-taha-1442133a1",
+      "https://medium.com/@3bd-aqeel"
+    ],
+    "knowsAbout": [
+      "Medical education",
+      "Public health",
+      "Preventive medicine",
+      "Health awareness",
+      "Medical myths"
+    ]
+  }
+  </script>
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+
   <!-- Animated medical background -->
   <div class="bgfx" aria-hidden="true">
     <div class="blob b1"></div>
@@ -62,6 +95,7 @@
     <div class="floaters"></div>
   </div>
 
+  <!-- Header -->
   <header class="topbar">
     <div class="container wrap">
       <div class="brand">
@@ -69,14 +103,13 @@
         <div>
           <div class="name">Abd-Alrahman Aqeel Taha</div>
           <div class="role">
-            <b></b>
             <span data-i18n="role">طالب طب • صانع محتوى طبي</span>
           </div>
 
-          <!-- ✅ Hidden SEO query line -->
-          <p style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;">
+          <!-- ✅ Hidden SEO line (safe + minimal) -->
+          <span style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;">
             الدكتور عبد الرحمن عقيل — الدكتور عبدالرحمن عقيل طه — Dr abd alrahman aqeel — Dr abd alrahman taha
-          </p>
+          </span>
         </div>
       </div>
 
@@ -104,16 +137,15 @@
           <div class="pad">
             <div class="chip" data-i18n="home_kicker">ملف طبي تعليمي • موثوق • متحرك</div>
 
-            <h1 class="h1" data-i18n="hero_title">
-              الدكتور عبدالرحمن عقيل طه | Dr Abd-Alrahman Aqeel Taha
-            </h1>
+            <!-- ✅ Keep as translatable title OR hard title.
+                 If you want it translatable, remove the Arabic/English text and set it in i18n key hero_title -->
+            <h1 class="h1">الدكتور عبدالرحمن عقيل طه | Dr Abd-Alrahman Aqeel Taha</h1>
 
-            <!-- ✅ These contain <strong> in translations, so use data-i18n-html -->
             <p class="p" data-i18n-html="hero_p1"></p>
             <p class="p" data-i18n-html="hero_p2"></p>
             <p class="p" data-i18n="hero_p3"></p>
 
-            <!-- ✅ SOCIAL QUICK LINKS (Instagram + TikTok) -->
+            <!-- Social quick links -->
             <div class="socialRow reveal" aria-label="Social media links"
                  style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
               <a class="btn social instagram"
@@ -246,7 +278,7 @@
                   <div class="title">Why Doctors Are Afraid of Apples 🍎</div>
                   <div class="desc" data-i18n="featured_article_desc">اقرأ المقال الكامل مع الفكرة العلمية والمراجع</div>
                 </div>
-                <div>→</div>
+                <div aria-hidden="true">→</div>
               </a>
 
               <a class="row" href="https://medium.com/@3bd-aqeel" target="_blank" rel="noopener">
@@ -254,7 +286,7 @@
                   <div class="title">Medium Profile</div>
                   <div class="desc" data-i18n="featured_profile_desc">كل المقالات في مكان واحد</div>
                 </div>
-                <div>→</div>
+                <div aria-hidden="true">→</div>
               </a>
             </div>
           </div>
