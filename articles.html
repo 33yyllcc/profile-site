@@ -1,65 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Articles | Abdulrahman Aqeel Taha</title>
-  <meta name="description" content="Articles by Abdulrahman Aqeel Taha on Medium."/>
+  <title>Articles | Abd-Alrahman Aqeel Taha</title>
+  <meta name="description" content="Articles by Abd-Alrahman Aqeel Taha on Medium."/>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
+
   <div class="nav">
     <div class="container nav-inner">
       <div class="brand">
-        <div>Abdulrahman Aqeel Taha</div>
-        <div class="badge">Articles</div>
+        <img src="assets/img/logo.png" alt="Logo">
+        <div>Abd-Alrahman Aqeel Taha</div>
+        <div class="badge" data-i18n="badge_articles">المقالات</div>
       </div>
+
       <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="articles.html">Articles</a>
-        <a href="links.html">Links</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+        <a href="about.html" data-i18n="nav_about">من أنا</a>
+        <a href="articles.html" data-i18n="nav_articles">المقالات</a>
+        <a href="links.html" data-i18n="nav_links">روابط</a>
+        <a href="contact.html" data-i18n="nav_contact">تواصل</a>
+      </div>
+
+      <div class="lang">
+        <div class="hint" id="langHint">اللغة</div>
+        <button id="langToggle" type="button">EN</button>
       </div>
     </div>
   </div>
 
-  <div class="container hero">
+  <div class="container hero fade-in">
     <div class="card">
       <div class="card-pad">
-        <h1 class="h1" style="font-size:38px">Articles</h1>
-        <p class="p">
-          Long-form medical writing on Medium. New articles will be listed here.
-        </p>
+        <h1 class="h1" style="font-size:38px" data-i18n="articles_title">المقالات</h1>
+        <p class="p" data-i18n="articles_p1"></p>
 
         <div class="list">
           <a class="linkrow" href="https://medium.com/@3bd-aqeel" target="_blank" rel="noopener">
             <div class="left">
-              <div class="title">Visit my Medium profile</div>
-              <div class="desc">All articles in one place</div>
+              <div class="title" data-i18n="articles_profile_t">ملفي على Medium</div>
+              <div class="desc" data-i18n="articles_profile_d">كل المقالات بمكان واحد</div>
             </div>
             <div>→</div>
           </a>
 
-          <!-- Add your article links below (replace #) -->
-          <div class="linkrow">
+          <!-- ✅ Article 1 -->
+          <a class="linkrow" href="https://3bd-aqeel.medium.com/why-doctors-are-afraid-of-apples-db15f65c4c2d" target="_blank" rel="noopener">
             <div class="left">
-              <div class="title">Why Doctors Are Afraid of Apples 🍎</div>
-              <div class="desc">https://3bd-aqeel.medium.com/why-doctors-are-afraid-of-apples-db15f65c4c2d</div>
+              <div class="title" data-i18n="article1_t">لماذا الأطباء “يخافون” من التفاح 🍎</div>
+              <div class="desc" data-i18n="article1_d">اقرأ المقال الكامل على Medium</div>
             </div>
-            <div class="kbd">https://3bd-aqeel.medium.com/why-doctors-are-afraid-of-apples-db15f65c4c2d</div>
-          </div>
+            <div>→</div>
+          </a>
 
-          <p class="small">
-            Tip: after you get the exact Medium link of your article, replace “Coming” with a clickable link.
-          </p>
+          <div class="note">
+            <span class="kbd">Tip</span>
+            <span data-i18n="articles_tip">كل مقال جديد ضيفه هنا حتى يصير عندك أرشيف رسمي بالموقع.</span>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="footer">
-      <div>© <span id="year"></span> Abdulrahman Aqeel Taha</div>
-      <div><a class="kbd" href="links.html">Share</a></div>
+      <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
+      <div><span class="kbd">profile.mazums.org</span></div>
     </div>
   </div>
 
