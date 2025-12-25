@@ -7,7 +7,8 @@
       nav_articles: "المقالات",
       nav_links: "روابط",
       nav_contact: "تواصل",
-
+      ig_btn:"انستغرام",
+      tt_btn:"تيك توك",
       role: "طالب طب • صانع محتوى طبي",
 
       /* HOME / HERO */
@@ -121,7 +122,8 @@
       chips4: "Health awareness",
       chips5: "Myth-busting",
       chips6: "Clear methodology",
-
+      ig_btn:"Instagram",
+      tt_btn:"TikTok",
       cta1: "Articles",
       cta1s: "Medium",
       cta2: "My links",
