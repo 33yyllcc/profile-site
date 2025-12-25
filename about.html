@@ -4,80 +4,60 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>About | Abd-Alrahman Aqeel Taha</title>
-  <meta name="description" content="About Abd-Alrahman Aqeel Taha — medical student & medical content creator."/>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
+  <div class="bgfx">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div class="grid"></div><div class="floaters"></div>
+  </div>
 
-  <div class="nav">
-    <div class="container nav-inner">
+  <header class="topbar">
+    <div class="container wrap">
       <div class="brand">
-        <img src="assets/img/logo.png" alt="Logo">
-        <div>Abd-Alrahman Aqeel Taha</div>
-        <div class="badge" data-i18n="badge_about">من أنا</div>
+        <img src="assets/img/logo.png" alt="logo">
+        <div>
+          <div class="name">Abd-Alrahman Aqeel Taha</div>
+          <div class="role"><b></b><span data-i18n="role"></span></div>
+        </div>
       </div>
-
-      <div class="menu">
-        <a href="index.html" data-i18n="nav_home">الرئيسية</a>
-        <a href="about.html" data-i18n="nav_about">من أنا</a>
-        <a href="articles.html" data-i18n="nav_articles">المقالات</a>
-        <a href="links.html" data-i18n="nav_links">روابط</a>
-        <a href="contact.html" data-i18n="nav_contact">تواصل</a>
-      </div>
-
-      <div class="lang">
-        <div class="hint" id="langHint">اللغة</div>
+      <nav class="nav">
+        <a href="index.html" data-i18n="nav_home"></a>
+        <a href="about.html" data-i18n="nav_about"></a>
+        <a href="articles.html" data-i18n="nav_articles"></a>
+        <a href="links.html" data-i18n="nav_links"></a>
+        <a href="contact.html" data-i18n="nav_contact"></a>
+      </nav>
+      <div class="tools">
+        <div class="hint" id="langHint"></div>
         <button id="langToggle" type="button">EN</button>
       </div>
     </div>
-  </div>
+  </header>
 
-  <div class="container hero fade-in">
-    <div class="split">
-      <div class="media">
-        <img src="assets/img/arms-crossed.png" alt="Arms crossed medical portrait">
-      </div>
-
-      <div class="card">
-        <div class="card-pad">
-          <h1 class="h1" style="font-size:38px" data-i18n="about_title">من أنا</h1>
-
-          <!-- النصوص تتبدل من main.js -->
-          <p class="p" data-i18n="about_p1"></p>
-          <p class="p" data-i18n="about_p2"></p>
-
-          <div class="pills">
-            <div class="pill" data-i18n="about_pill1">تبسيط الطب</div>
-            <div class="pill" data-i18n="about_pill2">محتوى موثوق</div>
-            <div class="pill" data-i18n="about_pill3">توعية صحية</div>
-            <div class="pill" data-i18n="about_pill4">كتابة + فيديو</div>
-          </div>
-
-          <div class="note" style="margin-top:14px" data-i18n="about_note"></div>
+  <main class="page">
+    <div class="container">
+      <section class="hero" style="grid-template-columns:.95fr 1.05fr">
+        <div class="media reveal">
+          <img src="assets/img/arms-crossed.png" alt="about">
         </div>
-      </div>
-    </div>
+        <div class="panel reveal">
+          <div class="pad">
+            <h1 class="h1" data-i18n="about_title"></h1>
+            <p class="p" data-i18n="about_p"></p>
+            <p class="p" data-i18n="about_p2"></p>
+            <p class="p" data-i18n="about_p3"></p>
+            <div class="callout" data-i18n="c_disclaimer"></div>
+          </div>
+        </div>
+      </section>
 
-    <div class="grid">
-      <div class="card item">
-        <h3 data-i18n="about_block1_t">شنو أقدّم؟</h3>
-        <p data-i18n="about_block1_d"></p>
-      </div>
-      <div class="card item">
-        <h3 data-i18n="about_block2_t">قيمي بالمحتوى</h3>
-        <p data-i18n="about_block2_d"></p>
-      </div>
-      <div class="card item">
-        <h3 data-i18n="about_block3_t">متاح لـ</h3>
-        <p data-i18n="about_block3_d"></p>
+      <div class="footer reveal">
+        <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
+        <div>profile.mazums.org</div>
       </div>
     </div>
-
-    <div class="footer">
-      <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
-      <div><a class="kbd" href="links.html" data-i18n="nav_links">روابط</a></div>
-    </div>
-  </div>
+  </main>
 
   <script src="assets/js/main.js"></script>
 </body>
