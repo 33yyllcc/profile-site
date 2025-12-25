@@ -4,71 +4,73 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Articles | Abd-Alrahman Aqeel Taha</title>
-  <meta name="description" content="Articles by Abd-Alrahman Aqeel Taha on Medium."/>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
+  <div class="bgfx">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div class="grid"></div><div class="floaters"></div>
+  </div>
 
-  <div class="nav">
-    <div class="container nav-inner">
+  <header class="topbar">
+    <div class="container wrap">
       <div class="brand">
-        <img src="assets/img/logo.png" alt="Logo">
-        <div>Abd-Alrahman Aqeel Taha</div>
-        <div class="badge" data-i18n="badge_articles">المقالات</div>
+        <img src="assets/img/logo.png" alt="logo">
+        <div>
+          <div class="name">Abd-Alrahman Aqeel Taha</div>
+          <div class="role"><b></b><span data-i18n="role"></span></div>
+        </div>
       </div>
-
-      <div class="menu">
-        <a href="index.html" data-i18n="nav_home">الرئيسية</a>
-        <a href="about.html" data-i18n="nav_about">من أنا</a>
-        <a href="articles.html" data-i18n="nav_articles">المقالات</a>
-        <a href="links.html" data-i18n="nav_links">روابط</a>
-        <a href="contact.html" data-i18n="nav_contact">تواصل</a>
-      </div>
-
-      <div class="lang">
-        <div class="hint" id="langHint">اللغة</div>
+      <nav class="nav">
+        <a href="index.html" data-i18n="nav_home"></a>
+        <a href="about.html" data-i18n="nav_about"></a>
+        <a href="articles.html" data-i18n="nav_articles"></a>
+        <a href="links.html" data-i18n="nav_links"></a>
+        <a href="contact.html" data-i18n="nav_contact"></a>
+      </nav>
+      <div class="tools">
+        <div class="hint" id="langHint"></div>
         <button id="langToggle" type="button">EN</button>
       </div>
     </div>
-  </div>
+  </header>
 
-  <div class="container hero fade-in">
-    <div class="card">
-      <div class="card-pad">
-        <h1 class="h1" style="font-size:38px" data-i18n="articles_title">المقالات</h1>
-        <p class="p" data-i18n="articles_p1"></p>
+  <main class="page">
+    <div class="container">
+      <section class="panel reveal">
+        <div class="pad">
+          <h1 class="h1" data-i18n="articles_title"></h1>
+          <p class="p" data-i18n="articles_p"></p>
 
-        <div class="list">
-          <a class="linkrow" href="https://medium.com/@3bd-aqeel" target="_blank" rel="noopener">
-            <div class="left">
-              <div class="title" data-i18n="articles_profile_t">ملفي على Medium</div>
-              <div class="desc" data-i18n="articles_profile_d">كل المقالات بمكان واحد</div>
-            </div>
-            <div>→</div>
-          </a>
+          <div class="list">
+            <a class="row" href="https://3bd-aqeel.medium.com/why-doctors-are-afraid-of-apples-db15f65c4c2d" target="_blank" rel="noopener">
+              <div class="left">
+                <div class="title" data-i18n="article1"></div>
+                <div class="desc" data-i18n="article1d"></div>
+              </div>
+              <div>→</div>
+            </a>
 
-          <!-- ✅ Article 1 -->
-          <a class="linkrow" href="https://3bd-aqeel.medium.com/why-doctors-are-afraid-of-apples-db15f65c4c2d" target="_blank" rel="noopener">
-            <div class="left">
-              <div class="title" data-i18n="article1_t">لماذا الأطباء “يخافون” من التفاح 🍎</div>
-              <div class="desc" data-i18n="article1_d">اقرأ المقال الكامل على Medium</div>
-            </div>
-            <div>→</div>
-          </a>
-
-          <div class="note">
-            <span class="kbd">Tip</span>
-            <span data-i18n="articles_tip">كل مقال جديد ضيفه هنا حتى يصير عندك أرشيف رسمي بالموقع.</span>
+            <!-- اضافة مقال جديد: انسخ البلوك هذا وبدّل الرابط والعنوان -->
+            <!--
+            <a class="row" href="NEW_LINK" target="_blank" rel="noopener">
+              <div class="left">
+                <div class="title">New title</div>
+                <div class="desc">Read on Medium</div>
+              </div>
+              <div>→</div>
+            </a>
+            -->
           </div>
         </div>
+      </section>
+
+      <div class="footer reveal">
+        <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
+        <div>profile.mazums.org</div>
       </div>
     </div>
-
-    <div class="footer">
-      <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
-      <div><span class="kbd">profile.mazums.org</span></div>
-    </div>
-  </div>
+  </main>
 
   <script src="assets/js/main.js"></script>
 </body>
