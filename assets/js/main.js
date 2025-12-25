@@ -42,6 +42,22 @@
       about_note:
         "Disclaimer: This website and content are for education and awareness, not for personal diagnosis or treatment.",
 
+      /* ✅ Added for About page (pills + blocks) */
+      about_pill1: "Simplify medicine",
+      about_pill2: "Evidence-based",
+      about_pill3: "Health awareness",
+      about_pill4: "Writing + video",
+
+      about_block1_t: "What I do",
+      about_block1_d:
+        "I create short medical videos and write long-form articles that make complex topics easier to understand.",
+      about_block2_t: "My content principles",
+      about_block2_d:
+        "Clarity, responsible tone, and references when possible. Educational content only — not personal medical advice.",
+      about_block3_t: "Available for",
+      about_block3_d:
+        "Collaborations, educational projects, guest writing, and medical awareness campaigns.",
+
       articles_title: "Articles",
       articles_p1: "Long-form writing on Medium. I will list new articles here.",
       articles_profile_t: "My Medium profile",
@@ -53,9 +69,21 @@
       links_p1: "Use this as the only link in your bio everywhere.",
       links_tip: "Set this page as your single bio link (Instagram/TikTok/YouTube).",
 
+      /* ✅ Added for Links page (CTA + sections) */
+      links_cta1: "Read articles",
+      links_cta2: "Contact me",
+      links_note:
+        "If you like the content, follow me — and keep this page as your single bio link.",
+      links_featured: "Featured",
+      links_medium_desc: "Long-form articles + references",
+      links_li_desc: "Professional profile & networking",
+      links_social: "Social",
+      links_contact: "Contact",
+
       contact_title: "Contact",
       contact_p1: "For collaborations, educational projects, or invitations:",
-      contact_note: "I can’t provide personal diagnosis via messages. Educational questions are welcome.",
+      contact_note:
+        "I can’t provide personal diagnosis via messages. Educational questions are welcome.",
 
       lang_btn: "AR",
       lang_hint: "Language"
@@ -103,6 +131,22 @@
       about_note:
         "تنبيه: هذا الموقع والمحتوى للتعليم والتوعية فقط وليس للتشخيص أو العلاج.",
 
+      /* ✅ Added for About page (pills + blocks) */
+      about_pill1: "تبسيط الطب",
+      about_pill2: "محتوى موثوق",
+      about_pill3: "توعية صحية",
+      about_pill4: "كتابة + فيديو",
+
+      about_block1_t: "شنو أقدّم؟",
+      about_block1_d:
+        "أصنع فيديوهات طبية قصيرة، وأكتب مقالات أطول تساعد على فهم المواضيع الصعبة بشكل واضح.",
+      about_block2_t: "قيمي بالمحتوى",
+      about_block2_d:
+        "وضوح، أسلوب مسؤول، ومراجع قدر الإمكان. المحتوى للتعليم فقط وليس استشارة طبية شخصية.",
+      about_block3_t: "متاح لـ",
+      about_block3_d:
+        "التعاونات، مشاريع تعليمية، كتابة ضيف، وحملات توعوية.",
+
       articles_title: "المقالات",
       articles_p1: "مقالات طويلة على Medium، وراح أضيف المقالات الجديدة هنا باستمرار.",
       articles_profile_t: "ملفي على Medium",
@@ -114,9 +158,21 @@
       links_p1: "استخدم هذه الصفحة كرابط واحد بكل مكان.",
       links_tip: "خلي هذه الصفحة هي الرابط الوحيد في بايو الإنستغرام/التيك توك/اليوتيوب.",
 
+      /* ✅ Added for Links page (CTA + sections) */
+      links_cta1: "اقرأ المقالات",
+      links_cta2: "تواصل معي",
+      links_note:
+        "إذا تحب المحتوى: تابعني وخلي هذه الصفحة هي الرابط الوحيد عندك.",
+      links_featured: "روابط مهمة",
+      links_medium_desc: "مقالات طويلة + مراجع",
+      links_li_desc: "ملف مهني وتواصل",
+      links_social: "السوشيال",
+      links_contact: "التواصل",
+
       contact_title: "تواصل",
       contact_p1: "للتعاونات أو المشاريع التعليمية أو الدعوات:",
-      contact_note: "ملاحظة: ما أقدم تشخيص شخصي عبر الرسائل. الأسئلة التعليمية مرحب بها.",
+      contact_note:
+        "ملاحظة: ما أقدم تشخيص شخصي عبر الرسائل. الأسئلة التعليمية مرحب بها.",
 
       lang_btn: "EN",
       lang_hint: "اللغة"
@@ -136,7 +192,7 @@
 
   function applyTranslations(l) {
     const dict = i18n[l] || i18n[defaultLang];
-    document.querySelectorAll("[data-i18n]").forEach(el => {
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       if (dict[key]) el.textContent = dict[key];
     });
@@ -150,7 +206,7 @@
 
   function markActiveNav() {
     const path = location.pathname.split("/").pop() || "index.html";
-    document.querySelectorAll(".menu a").forEach(a => {
+    document.querySelectorAll(".menu a").forEach((a) => {
       const href = a.getAttribute("href");
       if (href === path) a.classList.add("active");
     });
