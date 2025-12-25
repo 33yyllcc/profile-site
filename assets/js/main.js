@@ -47,7 +47,7 @@
       about_pill2: "Evidence-based",
       about_pill3: "Health awareness",
       about_pill4: "Writing + video",
-
+      articles_tip: "Add every new article here to build your official archive on the website.",
       about_block1_t: "What I do",
       about_block1_d:
         "I create short medical videos and write long-form articles that make complex topics easier to understand.",
@@ -101,7 +101,7 @@
       badge_articles: "المقالات",
       badge_links: "روابط",
       badge_contact: "تواصل",
-
+      articles_tip: "كل مقال جديد ضيفه هنا حتى يصير عندك أرشيف رسمي بالموقع.",
       hero_title: "ملف طبي قوي — رسمي، نظيف، وجذاب.",
       hero_desc:
         "أنا Abd-Alrahman Aqeel Taha — طالب طب وصانع محتوى طبي. أكتب مقالات تعليمية وأقدم فيديوهات قصيرة لتبسيط المفاهيم الطبية بشكل واضح وموثوق وبأسلوب مسؤول.",
