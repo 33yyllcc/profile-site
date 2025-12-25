@@ -8,55 +8,101 @@
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
+  <!-- Animated medical background -->
+  <div class="bgfx">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div class="grid"></div>
+    <div class="floaters"></div>
+  </div>
 
-  <div class="nav">
-    <div class="container nav-inner">
+  <header class="topbar">
+    <div class="container wrap">
       <div class="brand">
-        <img src="assets/img/logo.png" alt="Logo">
-        <div>Abd-Alrahman Aqeel Taha</div>
-        <div class="badge" data-i18n="badge_contact">تواصل</div>
+        <img src="assets/img/logo.png" alt="logo">
+        <div>
+          <div class="name">Abd-Alrahman Aqeel Taha</div>
+          <div class="role"><b></b><span data-i18n="role"></span></div>
+        </div>
       </div>
 
-      <div class="menu">
-        <a href="index.html" data-i18n="nav_home">الرئيسية</a>
-        <a href="about.html" data-i18n="nav_about">من أنا</a>
-        <a href="articles.html" data-i18n="nav_articles">المقالات</a>
-        <a href="links.html" data-i18n="nav_links">روابط</a>
-        <a href="contact.html" data-i18n="nav_contact">تواصل</a>
-      </div>
+      <nav class="nav">
+        <a href="index.html" data-i18n="nav_home"></a>
+        <a href="about.html" data-i18n="nav_about"></a>
+        <a href="articles.html" data-i18n="nav_articles"></a>
+        <a href="links.html" data-i18n="nav_links"></a>
+        <a href="contact.html" data-i18n="nav_contact"></a>
+      </nav>
 
-      <div class="lang">
-        <div class="hint" id="langHint">اللغة</div>
+      <div class="tools">
+        <div class="hint" id="langHint"></div>
         <button id="langToggle" type="button">EN</button>
       </div>
     </div>
-  </div>
+  </header>
 
-  <div class="container hero fade-in">
-    <div class="card">
-      <div class="card-pad">
-        <h1 class="h1" style="font-size:38px" data-i18n="contact_title">تواصل</h1>
-        <p class="p" data-i18n="contact_p1"></p>
+  <main class="page">
+    <div class="container">
+      <section class="hero" style="grid-template-columns: 1.05fr .95fr;">
+        <div class="panel reveal">
+          <div class="pad">
+            <h1 class="h1" data-i18n="contact_title">تواصل</h1>
+            <p class="p" data-i18n="contact_p"></p>
 
-        <div class="list">
-          <a class="linkrow" href="mailto:abdalrahmanaqeeltaha@gmail.com">
-            <div class="left">
-              <div class="title">Email</div>
-              <div class="desc">abdalrahmanaqeeltaha@gmail.com</div>
+            <div class="chips">
+              <div class="chip" data-i18n="contact_chip1">تعاونات</div>
+              <div class="chip" data-i18n="contact_chip2">مشاريع تعليمية</div>
+              <div class="chip" data-i18n="contact_chip3">دعوات ومحاضرات</div>
             </div>
-            <div>→</div>
-          </a>
+
+            <div class="list">
+              <a class="row" href="mailto:abdalrahmanaqeeltaha@gmail.com?subject=Collaboration%20Request&body=Hi%20Abd-Alrahman%2C%0A%0AI%20would%20like%20to%20collaborate%20on%20...">
+                <div class="left">
+                  <div class="title">Email</div>
+                  <div class="desc">abdalrahmanaqeeltaha@gmail.com</div>
+                </div>
+                <div>→</div>
+              </a>
+            </div>
+
+            <div class="callout" data-i18n="contact_note"></div>
+          </div>
         </div>
 
-        <div class="note" style="margin-top:14px" data-i18n="contact_note"></div>
+        <div class="media reveal">
+          <img src="assets/img/hero.png" alt="contact hero">
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card reveal" style="grid-column: span 6;">
+          <div class="pad">
+            <h3 data-i18n="contact_box1">أفضل شيء تكتبه بالرسالة</h3>
+            <p data-i18n="contact_box1d">عرّف بنفسك + شنو نوع التعاون + رابط مثال/فكرة + موعد مناسب.</p>
+          </div>
+        </div>
+        <div class="card reveal" style="grid-column: span 6;">
+          <div class="pad">
+            <h3 data-i18n="contact_box2">وقت الرد</h3>
+            <p data-i18n="contact_box2d">أحاول أرد بأسرع وقت، خصوصاً للتعاونات والمشاريع التعليمية.</p>
+          </div>
+        </div>
+
+        <div class="card reveal" style="grid-column: span 12;">
+          <div class="pad">
+            <h3 data-i18n="contact_box3">ملاحظة مهمة</h3>
+            <p data-i18n="contact_box3d">
+              هذا الحساب للتعليم والتوعية، لذلك ما أقدر أقدّم تشخيص شخصي عبر الرسائل.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer reveal">
+        <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
+        <div>profile.mazums.org</div>
       </div>
     </div>
-
-    <div class="footer">
-      <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
-      <div><a class="kbd" href="links.html" data-i18n="nav_links">روابط</a></div>
-    </div>
-  </div>
+  </main>
 
   <script src="assets/js/main.js"></script>
 </body>
