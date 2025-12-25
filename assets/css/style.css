@@ -347,3 +347,24 @@ a{color:inherit;text-decoration:none}
   will-change: opacity, transform;
 }
 .reveal.in{opacity:1; transform: translateY(0);}
+
+/* ✅ Add these at the END of assets/css/style.css (optional but recommended) */
+.btn.social {
+  border-radius: 14px;
+  font-weight: 700;
+  backdrop-filter: blur(6px);
+}
+
+.btn.social.instagram {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: #fff;
+}
+
+.btn.social.tiktok {
+  background: linear-gradient(135deg, #25F4EE, #000000, #FE2C55);
+  color: #fff;
+}
+
+.btn.social:hover {
+  transform: translateY(-2px) scale(1.03);
+}
