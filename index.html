@@ -4,102 +4,119 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Abd-Alrahman Aqeel Taha | Medical Profile</title>
-  <meta name="description" content="Abd-Alrahman Aqeel Taha — medical student & medical content creator. Evidence-based medical education."/>
-  <meta name="robots" content="index,follow"/>
+  <meta name="description" content="Abd-Alrahman Aqeel Taha — Medical Student & Medical Content Creator."/>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-  <div class="nav">
-    <div class="container nav-inner">
+
+  <!-- Animated medical background -->
+  <div class="bgfx">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="grid"></div>
+
+    <div class="ecg" aria-hidden="true">
+      <svg viewBox="0 0 1600 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 70 H140 L170 35 L210 95 L250 55 L290 70 H420 L450 30 L490 102 L525 58 L560 70 H700 L730 40 L770 98 L810 52 L850 70 H1000 L1030 34 L1070 104 L1110 54 L1150 70 H1300 L1330 36 L1370 100 L1410 56 L1450 70 H1600"
+              stroke="rgba(77,227,255,.85)" stroke-width="3" />
+      </svg>
+      <svg viewBox="0 0 1600 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 70 H140 L170 35 L210 95 L250 55 L290 70 H420 L450 30 L490 102 L525 58 L560 70 H700 L730 40 L770 98 L810 52 L850 70 H1000 L1030 34 L1070 104 L1110 54 L1150 70 H1300 L1330 36 L1370 100 L1410 56 L1450 70 H1600"
+              stroke="rgba(124,255,179,.65)" stroke-width="3" />
+      </svg>
+    </div>
+
+    <div class="floaters"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="container wrap">
       <div class="brand">
-        <img src="assets/img/logo.png" alt="Logo">
-        <div>Abd-Alrahman Aqeel Taha</div>
-        <div class="badge" data-i18n="badge_student">طالب طب</div>
+        <img src="assets/img/logo.png" alt="logo">
+        <div>
+          <div class="name">Abd-Alrahman Aqeel Taha</div>
+          <div class="role"><b></b><span data-i18n="role">طالب طب • صانع محتوى طبي</span></div>
+        </div>
       </div>
 
-      <div class="menu">
+      <nav class="nav">
         <a href="index.html" data-i18n="nav_home">الرئيسية</a>
-        <a href="about.html" data-i18n="nav_about">من أنا</a>
+        <a href="about.html" data-i18n="nav_about">نبذة عني</a>
         <a href="articles.html" data-i18n="nav_articles">المقالات</a>
         <a href="links.html" data-i18n="nav_links">روابط</a>
         <a href="contact.html" data-i18n="nav_contact">تواصل</a>
-      </div>
+      </nav>
 
-      <div class="lang">
-        <div class="hint" id="langHint">اللغة</div>
+      <div class="tools">
+        <div class="hint" id="langHint" data-i18n="langHint">اللغة</div>
         <button id="langToggle" type="button">EN</button>
       </div>
     </div>
-  </div>
+  </header>
 
   <main class="page">
-    <div class="container hero">
-      <div class="hero-wrap">
-        <section class="card reveal">
-          <div class="card-pad">
-            <div class="kicker"><span class="dot"></span><span data-i18n="home_kicker">ملف طبي • محتوى • مصداقية</span></div>
-            <h1 class="h1" data-i18n="hero_title">موقع طبي رسمي… بس بروح عصرية وتحريك لطيف.</h1>
+    <div class="container">
+      <section class="hero">
+        <div class="panel reveal">
+          <div class="pad">
+            <div class="chip" data-i18n="home_kicker">Neo-Medical Profile • موثوق • متحرك</div>
+            <h1 class="h1" data-i18n="hero_title">أجمل بروفايل طبي… بهوية حديثة وحضور قوي.</h1>
 
-            <p class="p" data-i18n="hero_desc"></p>
-            <p class="p" data-i18n="hero_desc2"></p>
+            <p class="p reveal in" data-i18n="hero_p1"></p>
+            <p class="p" data-i18n-html="hero_p2"></p>
+            <p class="p" data-i18n="hero_p3"></p>
 
-            <div class="pills">
-              <div class="pill" data-i18n="pill_1">تعليم طبي</div>
-              <div class="pill" data-i18n="pill_2">الصحة العامة</div>
-              <div class="pill" data-i18n="pill_3">الوقاية</div>
-              <div class="pill" data-i18n="pill_4">فيديوهات قصيرة</div>
-              <div class="pill" data-i18n="pill_5">كتابة علمية</div>
-              <div class="pill" data-i18n="pill_6">تصحيح خرافات</div>
+            <div class="chips">
+              <div class="chip" data-i18n="chips1">تعليم طبي</div>
+              <div class="chip" data-i18n="chips2">محتوى بصري</div>
+              <div class="chip" data-i18n="chips3">كتابة علمية</div>
+              <div class="chip" data-i18n="chips4">توعية صحية</div>
+              <div class="chip" data-i18n="chips5">Myth-busting</div>
+              <div class="chip" data-i18n="chips6">منهجية واضحة</div>
             </div>
 
-            <div class="actions">
-              <a class="btn primary" href="articles.html">📄 <span data-i18n="cta_articles">اقرأ المقالات</span></a>
-              <a class="btn" href="links.html">🔗 <span data-i18n="cta_social">روابطي</span></a>
-              <a class="btn" href="contact.html">✉️ <span data-i18n="cta_contact">تعاون معي</span></a>
+            <div class="ctaRow">
+              <a class="btn primary" href="articles.html">📄 <span data-i18n="cta1">المقالات</span> <span class="sub" data-i18n="cta1s">Medium</span></a>
+              <a class="btn" href="links.html">🔗 <span data-i18n="cta2">روابطي</span> <span class="sub" data-i18n="cta2s">Social</span></a>
+              <a class="btn" href="contact.html">✉️ <span data-i18n="cta3">تواصل</span> <span class="sub" data-i18n="cta3s">Email</span></a>
             </div>
 
-            <div class="note" style="margin-top:14px" data-i18n="hero_disclaimer"></div>
+            <div class="callout reveal" data-i18n="c_disclaimer">تنبيه: المحتوى تعليمي فقط وليس استشارة طبية.</div>
           </div>
-        </section>
-
-        <section class="media reveal">
-          <img src="assets/img/hero.png" alt="Medical portrait">
-        </section>
-      </div>
-
-      <section class="grid">
-        <div class="card item reveal">
-          <h3 data-i18n="stat1_k">المنصات</h3>
-          <p data-i18n="stat1_v">إنستغرام • تيك توك • يوتيوب</p>
         </div>
-        <div class="card item reveal">
-          <h3 data-i18n="stat2_k">أسلوب المحتوى</h3>
-          <p data-i18n="stat2_v">واضح • بصري • بمراجع</p>
-        </div>
-        <div class="card item reveal">
-          <h3 data-i18n="stat3_k">الهدف</h3>
-          <p data-i18n="stat3_v">ثقة + تعلم فعلي</p>
+
+        <div class="media reveal">
+          <img src="assets/img/hero.png" alt="hero">
         </div>
       </section>
 
-      <section class="grid">
-        <div class="card item reveal">
-          <h3 data-i18n="box1_t">أكتب</h3>
-          <p data-i18n="box1_d"></p>
+      <section class="section">
+        <div class="card reveal">
+          <div class="pad">
+            <h3 data-i18n="s1t">شنو راح تحصل هنا؟</h3>
+            <p data-i18n="s1d"></p>
+          </div>
         </div>
-        <div class="card item reveal">
-          <h3 data-i18n="box2_t">أعلّم</h3>
-          <p data-i18n="box2_d"></p>
+        <div class="card reveal">
+          <div class="pad">
+            <h3 data-i18n="s2t">أسلوبي بالمحتوى</h3>
+            <p data-i18n="s2d"></p>
+          </div>
         </div>
-        <div class="card item reveal">
-          <h3 data-i18n="box3_t">أبني ثقة</h3>
-          <p data-i18n="box3_d"></p>
+        <div class="card reveal">
+          <div class="pad">
+            <h3 data-i18n="s3t">ليش هذا مهم؟</h3>
+            <p data-i18n="s3d"></p>
+          </div>
         </div>
+
+        <div class="callout reveal" data-i18n="callout"></div>
       </section>
 
       <div class="footer reveal">
         <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
-        <div><span class="kbd">profile.mazums.org</span></div>
+        <div>profile.mazums.org</div>
       </div>
     </div>
   </main>
