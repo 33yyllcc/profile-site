@@ -107,9 +107,9 @@
 
       /* HOME / HERO */
       home_kicker: "Educational Medical Profile • Trusted • Dynamic",
-      hero_title: "An educational medical profile with a modern professional identity.",
+      hero_title: "who is Abd-Alrahman ? and what is this website)",
       hero_p1:
-        "Hi — I’m <strong>Abd-Alrahman Aqeel Taha</strong>, a medical student and medical content creator. This website is my official archive for articles, links, and educational work.",
+        "Hi — I’m Abd-Alrahman Aqeel Taha, a medical student and medical content creator. This website is my official archive for articles, links, and educational work.",
       hero_p2:
         "I focus on simplifying medical concepts without exaggeration, correcting common medical myths on social media, and turning complex topics into clear, practical points.",
       hero_p3:
