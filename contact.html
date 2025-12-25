@@ -1,36 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Contact | Abdulrahman Aqeel Taha</title>
-  <meta name="description" content="Contact Abdulrahman Aqeel Taha."/>
+  <title>Contact | Abd-Alrahman Aqeel Taha</title>
+  <meta name="description" content="Contact Abd-Alrahman Aqeel Taha."/>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
+
   <div class="nav">
     <div class="container nav-inner">
       <div class="brand">
-        <div>Abdulrahman Aqeel Taha</div>
-        <div class="badge">Contact</div>
+        <img src="assets/img/logo.png" alt="Logo">
+        <div>Abd-Alrahman Aqeel Taha</div>
+        <div class="badge" data-i18n="badge_contact">تواصل</div>
       </div>
+
       <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="articles.html">Articles</a>
-        <a href="links.html">Links</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+        <a href="about.html" data-i18n="nav_about">من أنا</a>
+        <a href="articles.html" data-i18n="nav_articles">المقالات</a>
+        <a href="links.html" data-i18n="nav_links">روابط</a>
+        <a href="contact.html" data-i18n="nav_contact">تواصل</a>
+      </div>
+
+      <div class="lang">
+        <div class="hint" id="langHint">اللغة</div>
+        <button id="langToggle" type="button">EN</button>
       </div>
     </div>
   </div>
 
-  <div class="container hero">
+  <div class="container hero fade-in">
     <div class="card">
       <div class="card-pad">
-        <h1 class="h1" style="font-size:38px">Contact</h1>
-        <p class="p">
-          For collaborations, educational projects, or speaking requests:
-        </p>
+        <h1 class="h1" style="font-size:38px" data-i18n="contact_title">تواصل</h1>
+        <p class="p" data-i18n="contact_p1"></p>
 
         <div class="list">
           <a class="linkrow" href="mailto:abdalrahmanaqeeltaha@gmail.com">
@@ -42,15 +48,13 @@
           </a>
         </div>
 
-        <p class="small" style="margin-top:12px">
-          Note: I can’t provide personal diagnosis via messages. Educational questions are welcome.
-        </p>
+        <div class="note" style="margin-top:14px" data-i18n="contact_note"></div>
       </div>
     </div>
 
     <div class="footer">
-      <div>© <span id="year"></span> Abdulrahman Aqeel Taha</div>
-      <div><a class="kbd" href="links.html">Back to Links</a></div>
+      <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
+      <div><a class="kbd" href="links.html" data-i18n="nav_links">روابط</a></div>
     </div>
   </div>
 
