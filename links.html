@@ -1,35 +1,87 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Links | Abdulrahman Aqeel Taha</title>
-  <meta name="description" content="Official links for Abdulrahman Aqeel Taha."/>
+  <title>Links | Abd-Alrahman Aqeel Taha</title>
+  <meta name="description" content="Official links for Abd-Alrahman Aqeel Taha."/>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
+
   <div class="nav">
     <div class="container nav-inner">
       <div class="brand">
-        <div>Abdulrahman Aqeel Taha</div>
-        <div class="badge">Links</div>
+        <img src="assets/img/logo.png" alt="Logo">
+        <div>Abd-Alrahman Aqeel Taha</div>
+        <div class="badge" data-i18n="badge_links">روابط</div>
       </div>
+
       <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="articles.html">Articles</a>
-        <a href="links.html">Links</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+        <a href="about.html" data-i18n="nav_about">من أنا</a>
+        <a href="articles.html" data-i18n="nav_articles">المقالات</a>
+        <a href="links.html" data-i18n="nav_links">روابط</a>
+        <a href="contact.html" data-i18n="nav_contact">تواصل</a>
+      </div>
+
+      <div class="lang">
+        <div class="hint" id="langHint">اللغة</div>
+        <button id="langToggle" type="button">EN</button>
       </div>
     </div>
   </div>
 
-  <div class="container hero">
-    <div class="card">
-      <div class="card-pad">
-        <h1 class="h1" style="font-size:38px">Official Links</h1>
-        <p class="p">Use this page as your “one link” everywhere.</p>
+  <div class="container hero fade-in">
+    <div class="split">
+      <div class="media">
+        <img src="assets/img/full-body.png" alt="Full body medical portrait">
+      </div>
 
+      <div class="card">
+        <div class="card-pad">
+          <h1 class="h1" style="font-size:38px" data-i18n="links_title">روابطي الرسمية</h1>
+          <p class="p" data-i18n="links_p1"></p>
+
+          <div class="note" style="margin-bottom:14px" data-i18n="links_tip"></div>
+
+          <div class="actions">
+            <a class="btn primary" href="articles.html">📄 <b data-i18n="links_cta1">اقرأ المقالات</b> <span>Medium</span></a>
+            <a class="btn" href="contact.html">✉️ <b data-i18n="links_cta2">تواصل معي</b> <span>Email</span></a>
+          </div>
+
+          <div class="note" style="margin-top:14px" data-i18n="links_note">
+            إذا تحب المحتوى: تابعني وخلي هذه الصفحة هي الرابط الوحيد عندك.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <div class="card-pad">
+        <h3 style="margin:0 0 10px" data-i18n="links_featured">روابط مهمة</h3>
+        <div class="list">
+          <a class="linkrow" href="https://medium.com/@3bd-aqeel" target="_blank" rel="noopener">
+            <div class="left">
+              <div class="title">Medium</div>
+              <div class="desc" data-i18n="links_medium_desc">مقالات طويلة + مراجع</div>
+            </div>
+            <div>→</div>
+          </a>
+          <a class="linkrow" href="https://www.linkedin.com/in/abd-alrahman-taha-1442133a1" target="_blank" rel="noopener">
+            <div class="left">
+              <div class="title">LinkedIn</div>
+              <div class="desc" data-i18n="links_li_desc">ملف مهني وتواصل</div>
+            </div>
+            <div>→</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <div class="card-pad">
+        <h3 style="margin:0 0 10px" data-i18n="links_social">السوشيال</h3>
         <div class="list">
           <a class="linkrow" href="https://www.instagram.com/3bd.aqeel" target="_blank" rel="noopener">
             <div class="left"><div class="title">Instagram</div><div class="desc">@3bd.aqeel</div></div><div>→</div>
@@ -40,26 +92,24 @@
           <a class="linkrow" href="https://youtube.com/@3_aqeel" target="_blank" rel="noopener">
             <div class="left"><div class="title">YouTube</div><div class="desc">@3_aqeel</div></div><div>→</div>
           </a>
-          <a class="linkrow" href="https://www.linkedin.com/in/abd-alrahman-taha-1442133a1" target="_blank" rel="noopener">
-            <div class="left"><div class="title">LinkedIn</div><div class="desc">Professional profile</div></div><div>→</div>
-          </a>
-          <a class="linkrow" href="https://medium.com/@3bd-aqeel" target="_blank" rel="noopener">
-            <div class="left"><div class="title">Medium</div><div class="desc">Articles & references</div></div><div>→</div>
-          </a>
-          <a class="linkrow" href="https://tr.ee/OgCHb-R7ZX" target="_blank" rel="noopener">
-            <div class="left"><div class="title">Facebook / Links</div><div class="desc">Your shared link</div></div><div>→</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <div class="card-pad">
+        <h3 style="margin:0 0 10px" data-i18n="links_contact">التواصل</h3>
+        <div class="list">
+          <a class="linkrow" href="mailto:abdalrahmanaqeeltaha@gmail.com">
+            <div class="left"><div class="title">Email</div><div class="desc">abdalrahmanaqeeltaha@gmail.com</div></div><div>→</div>
           </a>
         </div>
-
-        <p class="small" style="margin-top:12px">
-          Set this page as the only link in your Instagram/TikTok bio.
-        </p>
       </div>
     </div>
 
     <div class="footer">
-      <div>© <span id="year"></span> Abdulrahman Aqeel Taha</div>
-      <div><a class="kbd" href="contact.html">Contact</a></div>
+      <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
+      <div><span class="kbd">profile.mazums.org</span></div>
     </div>
   </div>
 
