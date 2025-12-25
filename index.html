@@ -1,105 +1,89 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Abdulrahman Aqeel Taha | Medical Student & Medical Content Creator</title>
-  <meta name="description" content="Abdulrahman Aqeel Taha — medical student & medical content creator. Evidence-based writing and short-form medical education."/>
+  <title>Abd-Alrahman Aqeel Taha | Medical Profile</title>
+  <meta name="description" content="Abd-Alrahman Aqeel Taha — medical student & medical content creator. Evidence-based medical education."/>
   <meta name="robots" content="index,follow"/>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
+
   <div class="nav">
     <div class="container nav-inner">
       <div class="brand">
-        <div>Abdulrahman Aqeel Taha</div>
-        <div class="badge">Medical Student</div>
+        <img src="assets/img/logo.png" alt="Logo">
+        <div>Abd-Alrahman Aqeel Taha</div>
+        <div class="badge" data-i18n="badge_student">طالب طب</div>
       </div>
+
       <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="articles.html">Articles</a>
-        <a href="links.html">Links</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+        <a href="about.html" data-i18n="nav_about">من أنا</a>
+        <a href="articles.html" data-i18n="nav_articles">المقالات</a>
+        <a href="links.html" data-i18n="nav_links">روابط</a>
+        <a href="contact.html" data-i18n="nav_contact">تواصل</a>
+      </div>
+
+      <div class="lang">
+        <div class="hint" id="langHint">اللغة</div>
+        <button id="langToggle" type="button">EN</button>
       </div>
     </div>
   </div>
 
-  <div class="container hero">
-    <div class="hero-grid">
+  <div class="container hero fade-in">
+    <div class="hero-wrap">
+
       <div class="card">
         <div class="card-pad">
-          <h1 class="h1">Evidence-based medicine, simplified.</h1>
-          <p class="p">
-            I’m <b>Abdulrahman Aqeel Taha</b> — a medical student & medical content creator.
-            I write educational articles and create short videos to make medical concepts clear, practical, and trustworthy.
-          </p>
+          <h1 class="h1" data-i18n="hero_title">ملف طبي قوي — رسمي، نظيف، وجذاب.</h1>
+          <p class="p" data-i18n="hero_desc">...</p>
 
           <div class="pills">
-            <div class="pill">Medical Education</div>
-            <div class="pill">Public Health</div>
-            <div class="pill">Preventive Medicine</div>
-            <div class="pill">Short-form Video</div>
+            <div class="pill" data-i18n="pill_1">تعليم طبي</div>
+            <div class="pill" data-i18n="pill_2">الصحة العامة</div>
+            <div class="pill" data-i18n="pill_3">الطب الوقائي</div>
+            <div class="pill" data-i18n="pill_4">فيديوهات قصيرة</div>
           </div>
 
           <div class="actions">
-            <a class="btn primary" href="articles.html">📄 Latest Articles <span>Medium</span></a>
-            <a class="btn" href="links.html">🔗 Social Links <span>Instagram • TikTok • YouTube</span></a>
-            <a class="btn" href="contact.html">✉️ Contact <span>Collabs & speaking</span></a>
+            <a class="btn primary" href="articles.html">📄 <b data-i18n="cta_articles">آخر المقالات</b> <span>Medium</span></a>
+            <a class="btn" href="links.html">🔗 <b data-i18n="cta_social">روابط حساباتي</b> <span>Social</span></a>
+            <a class="btn" href="contact.html">✉️ <b data-i18n="cta_contact">تواصل</b> <span>Email</span></a>
           </div>
 
-          <p class="small" style="margin-top:14px">
-            Educational content only — not medical advice.
-          </p>
+          <div class="note" style="margin-top:14px" data-i18n="hero_disclaimer">
+            محتوى تعليمي فقط — ليس استشارة طبية.
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="card-pad">
-          <h3 style="margin:0 0 8px">Quick Start</h3>
-          <div class="list">
-            <a class="linkrow" href="https://medium.com/@3bd-aqeel" target="_blank" rel="noopener">
-              <div class="left"><div class="title">Read on Medium</div><div class="desc">Long-form medical writing</div></div><div>→</div>
-            </a>
-
-            <a class="linkrow" href="https://www.instagram.com/3bd.aqeel" target="_blank" rel="noopener">
-              <div class="left"><div class="title">Instagram</div><div class="desc">Reels & carousels</div></div><div>→</div>
-            </a>
-
-            <a class="linkrow" href="https://www.tiktok.com/@3.aqeel" target="_blank" rel="noopener">
-              <div class="left"><div class="title">TikTok</div><div class="desc">Short medical explanations</div></div><div>→</div>
-            </a>
-
-            <a class="linkrow" href="https://youtube.com/@3_aqeel" target="_blank" rel="noopener">
-              <div class="left"><div class="title">YouTube</div><div class="desc">Longer videos & playlists</div></div><div>→</div>
-            </a>
-          </div>
-
-          <p class="small" style="margin-top:12px">
-            Tip: keep one link in all bios → <span class="kbd">profile.mazums.org/links.html</span>
-          </p>
-        </div>
+      <div class="media">
+        <img src="assets/img/hero.png" alt="Medical portrait">
       </div>
+
     </div>
 
     <div class="grid">
       <div class="card item">
-        <h3>Write</h3>
-        <p>Academic-style articles with references, made understandable for everyone.</p>
+        <h3 data-i18n="box1_t">أكتب</h3>
+        <p data-i18n="box1_d">...</p>
       </div>
       <div class="card item">
-        <h3>Teach</h3>
-        <p>Short videos that simplify difficult topics and correct common myths.</p>
+        <h3 data-i18n="box2_t">أعلّم</h3>
+        <p data-i18n="box2_d">...</p>
       </div>
       <div class="card item">
-        <h3>Build Trust</h3>
-        <p>Clear disclaimers, sources, and a consistent brand across platforms.</p>
+        <h3 data-i18n="box3_t">أبني ثقة</h3>
+        <p data-i18n="box3_d">...</p>
       </div>
     </div>
 
     <div class="footer">
-      <div>© <span id="year"></span> Abdulrahman Aqeel Taha</div>
-      <div>profile.mazums.org</div>
+      <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
+      <div><span class="kbd">profile.mazums.org</span></div>
     </div>
   </div>
 
