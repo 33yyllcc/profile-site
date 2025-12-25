@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-
   <div class="nav">
     <div class="container nav-inner">
       <div class="brand">
@@ -33,59 +32,77 @@
     </div>
   </div>
 
-  <div class="container hero fade-in">
-    <div class="hero-wrap">
+  <main class="page">
+    <div class="container hero">
+      <div class="hero-wrap">
+        <section class="card reveal">
+          <div class="card-pad">
+            <div class="kicker"><span class="dot"></span><span data-i18n="home_kicker">ملف طبي • محتوى • مصداقية</span></div>
+            <h1 class="h1" data-i18n="hero_title">موقع طبي رسمي… بس بروح عصرية وتحريك لطيف.</h1>
 
-      <div class="card">
-        <div class="card-pad">
-          <h1 class="h1" data-i18n="hero_title">ملف طبي قوي — رسمي، نظيف، وجذاب.</h1>
-          <p class="p" data-i18n="hero_desc">...</p>
+            <p class="p" data-i18n="hero_desc"></p>
+            <p class="p" data-i18n="hero_desc2"></p>
 
-          <div class="pills">
-            <div class="pill" data-i18n="pill_1">تعليم طبي</div>
-            <div class="pill" data-i18n="pill_2">الصحة العامة</div>
-            <div class="pill" data-i18n="pill_3">الطب الوقائي</div>
-            <div class="pill" data-i18n="pill_4">فيديوهات قصيرة</div>
+            <div class="pills">
+              <div class="pill" data-i18n="pill_1">تعليم طبي</div>
+              <div class="pill" data-i18n="pill_2">الصحة العامة</div>
+              <div class="pill" data-i18n="pill_3">الوقاية</div>
+              <div class="pill" data-i18n="pill_4">فيديوهات قصيرة</div>
+              <div class="pill" data-i18n="pill_5">كتابة علمية</div>
+              <div class="pill" data-i18n="pill_6">تصحيح خرافات</div>
+            </div>
+
+            <div class="actions">
+              <a class="btn primary" href="articles.html">📄 <span data-i18n="cta_articles">اقرأ المقالات</span></a>
+              <a class="btn" href="links.html">🔗 <span data-i18n="cta_social">روابطي</span></a>
+              <a class="btn" href="contact.html">✉️ <span data-i18n="cta_contact">تعاون معي</span></a>
+            </div>
+
+            <div class="note" style="margin-top:14px" data-i18n="hero_disclaimer"></div>
           </div>
+        </section>
 
-          <div class="actions">
-            <a class="btn primary" href="articles.html">📄 <b data-i18n="cta_articles">آخر المقالات</b> <span>Medium</span></a>
-            <a class="btn" href="links.html">🔗 <b data-i18n="cta_social">روابط حساباتي</b> <span>Social</span></a>
-            <a class="btn" href="contact.html">✉️ <b data-i18n="cta_contact">تواصل</b> <span>Email</span></a>
-          </div>
+        <section class="media reveal">
+          <img src="assets/img/hero.png" alt="Medical portrait">
+        </section>
+      </div>
 
-          <div class="note" style="margin-top:14px" data-i18n="hero_disclaimer">
-            محتوى تعليمي فقط — ليس استشارة طبية.
-          </div>
+      <section class="grid">
+        <div class="card item reveal">
+          <h3 data-i18n="stat1_k">المنصات</h3>
+          <p data-i18n="stat1_v">إنستغرام • تيك توك • يوتيوب</p>
         </div>
-      </div>
+        <div class="card item reveal">
+          <h3 data-i18n="stat2_k">أسلوب المحتوى</h3>
+          <p data-i18n="stat2_v">واضح • بصري • بمراجع</p>
+        </div>
+        <div class="card item reveal">
+          <h3 data-i18n="stat3_k">الهدف</h3>
+          <p data-i18n="stat3_v">ثقة + تعلم فعلي</p>
+        </div>
+      </section>
 
-      <div class="media">
-        <img src="assets/img/hero.png" alt="Medical portrait">
-      </div>
+      <section class="grid">
+        <div class="card item reveal">
+          <h3 data-i18n="box1_t">أكتب</h3>
+          <p data-i18n="box1_d"></p>
+        </div>
+        <div class="card item reveal">
+          <h3 data-i18n="box2_t">أعلّم</h3>
+          <p data-i18n="box2_d"></p>
+        </div>
+        <div class="card item reveal">
+          <h3 data-i18n="box3_t">أبني ثقة</h3>
+          <p data-i18n="box3_d"></p>
+        </div>
+      </section>
 
+      <div class="footer reveal">
+        <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
+        <div><span class="kbd">profile.mazums.org</span></div>
+      </div>
     </div>
-
-    <div class="grid">
-      <div class="card item">
-        <h3 data-i18n="box1_t">أكتب</h3>
-        <p data-i18n="box1_d">...</p>
-      </div>
-      <div class="card item">
-        <h3 data-i18n="box2_t">أعلّم</h3>
-        <p data-i18n="box2_d">...</p>
-      </div>
-      <div class="card item">
-        <h3 data-i18n="box3_t">أبني ثقة</h3>
-        <p data-i18n="box3_d">...</p>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div>© <span id="year"></span> Abd-Alrahman Aqeel Taha</div>
-      <div><span class="kbd">profile.mazums.org</span></div>
-    </div>
-  </div>
+  </main>
 
   <script src="assets/js/main.js"></script>
 </body>
